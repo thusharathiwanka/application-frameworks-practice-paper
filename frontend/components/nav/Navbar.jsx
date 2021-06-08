@@ -5,8 +5,8 @@ const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3">
 			<div className="container-lg">
-				<Link to="/" className="navbar-brand" href="#">
-					TAXI
+				<Link to="/" className="navbar-brand">
+					TAXI &copy;
 				</Link>
 				<button
 					className="navbar-toggler"
@@ -22,17 +22,16 @@ const Navbar = () => {
 				<div className="collapse navbar-collapse" id="navbarNav">
 					<ul className="navbar-nav ms-auto">
 						<li className="nav-item">
-							<Link to="/" className="nav-link " aria-current="page" href="#">
+							<Link to="/" className="nav-link" aria-current="page">
 								Home
 							</Link>
 						</li>
 						<li className="nav-item">
 							<Link
-								to="/category/create"
+								to="/vehicles/create"
 								className="nav-link btn btn-outline-primary ms-4 px-3"
-								href="#"
 							>
-								Create Category
+								Add Vehicle
 							</Link>
 						</li>
 					</ul>

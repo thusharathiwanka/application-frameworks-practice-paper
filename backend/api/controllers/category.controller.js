@@ -29,7 +29,7 @@ const getAllVehiclesInCategory = async (req, res) => {
 				req.params.id
 			).populate("vehicles", "code model type name");
 
-			res.status(201).json({ vehicles: allVehiclesInCategory.vehicles });
+			res.status(200).json({ vehicles: allVehiclesInCategory.vehicles });
 		} catch (error) {
 			res.status(401).json({ message: error.message });
 		}
